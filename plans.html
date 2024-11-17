@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Plans - BreadCorp Insurance</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="breadlogo.png" alt="BreadCorp Logo" class="logo">
+        <h1>BreadCorp Insurance</h1>
+        <p>Providing safety and security for your Minecraft adventures!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="plans.html">Our Plans</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="plans-section">
+        <h2>Our Plans</h2>
+        <div class="plans-container">
+            <!-- Wood Tier -->
+            <div class="plan-card">
+                <h3>Wood Tier</h3>
+                <p>The Basic Package. There's not much to it, but it works.</p>
+                <ul class="plan-details">
+                    <li>Armor: Unenchanted</li>
+                </ul>
+                <p class="price">15 Diamonds</p>
+                <form onsubmit="buyPlan('Wood Tier'); return false;">
+                    <input type="text" name="ign" placeholder="Your IGN" required>
+                    <input type="text" name="location" placeholder="Delivery Location" required>
+                    <button type="submit">Buy Now</button>
+                </form>
+            </div>
+
+            <!-- Iron Tier -->
+            <div class="plan-card">
+                <h3>Iron Tier</h3>
+                <p>A step up with basic enchantments for better protection.</p>
+                <ul class="plan-details">
+                    <li>Armor: Protection IV</li>
+                    <li>Armor: Unbreaking III</li>
+                </ul>
+                <p class="price">35 Diamonds</p>
+                <form onsubmit="buyPlan('Iron Tier'); return false;">
+                    <input type="text" name="ign" placeholder="Your IGN" required>
+                    <input type="text" name="location" placeholder="Delivery Location" required>
+                    <button type="submit">Buy Now</button>
+                </form>
+            </div>
+
+            <!-- Diamond Tier -->
+            <div class="plan-card">
+                <h3>Diamond Tier</h3>
+                <p>Full protection with Elytra, rockets, and food for exploration. Includes tools for any task.</p>
+                <ul class="plan-details">
+                    <li>Armor: Protection IV</li>
+                    <li>Armor: Unbreaking III</li>
+                    <li>Armor: Mending</li>
+                    <li>Perfect Sword: Sharpness V, Looting III, Mending</li>
+                    <li>Extras: Elytra, Rockets, Food</li>
+                    <li>Tools: Fortune III Pickaxe, Silk Touch Pickaxe, Max Axe, Max Shovel</li>
+                </ul>
+                <p class="price">80 Diamonds</p>
+                <form onsubmit="buyPlan('Diamond Tier'); return false;">
+                    <input type="text" name="ign" placeholder="Your IGN" required>
+                    <input type="text" name="location" placeholder="Delivery Location" required>
+                    <label>Thorns on Armor:</label>
+                    <select name="thorns" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <label>Knockback 2 on Sword:</label>
+                    <select name="knockback" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <label>Fire Aspect 2 on Sword:</label>
+                    <select name="fire-aspect" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <button type="submit">Buy Now</button>
+                </form>
+            </div>
+
+            <!-- Netherite Tier -->
+            <div class="plan-card">
+                <h3>Netherite Tier</h3>
+                <p>The ultimate protection with Netherite gear and tools for serious adventurers.</p>
+                <ul class="plan-details">
+                    <li>Armor: Protection IV</li>
+                    <li>Armor: Unbreaking III</li>
+                    <li>Armor: Mending</li>
+                    <li>Armor: Thorns III</li>
+                    <li>Perfect Sword: Sharpness V, Looting III, Mending</li>
+                    <li>Extras: Elytra, Rockets, Food</li>
+                    <li>Tools: Fortune III Pickaxe, Silk Touch Pickaxe, Max Axe, Max Shovel</li>
+                </ul>
+                <p class="price">140 Diamonds</p>
+                <form onsubmit="buyPlan('Netherite Tier'); return false;">
+                    <input type="text" name="ign" placeholder="Your IGN" required>
+                    <input type="text" name="location" placeholder="Delivery Location" required>
+                    <label>Thorns on Armor:</label>
+                    <select name="thorns" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <label>Knockback 2 on Sword:</label>
+                    <select name="knockback" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <label>Fire Aspect 2 on Sword:</label>
+                    <select name="fire-aspect" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <button type="submit">Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BreadCorp Insurance. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
